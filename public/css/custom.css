@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 600;
+}
+
+/* Dashboard Styles */
+.stat-card {
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Table Styles */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: 600;
+}
+
+/* Status Badges */
+.badge-pending {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.badge-active, .badge-in-progress {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.badge-completed {
+    background-color: #198754;
+    color: #fff;
+}
+
+/* Priority Indicators */
+.priority-1 {
+    border-left: 4px solid #6c757d;
+}
+
+.priority-2 {
+    border-left: 4px solid #0dcaf0;
+}
+
+.priority-3 {
+    border-left: 4px solid #0d6efd;
+}
+
+.priority-4 {
+    border-left: 4px solid #ffc107;
+}
+
+.priority-5 {
+    border-left: 4px solid #dc3545;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .table th, .table td {
+        padding: 0.5rem;
+    }
+    
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
