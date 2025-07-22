@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Halaman Login" src="https://github.com/user-attachments/assets/37301493-3498-4639-8120-c9680d2f94cf" /><img width="1920" height="1080" alt="Halaman Login" src="https://github.com/user-attachments/assets/b84e693d-5d40-4910-ae13-97a349dc59a9" /># 📦 Sistem Manajemen Produksi MMID
+# 📦 Sistem Manajemen Produksi MMID
 
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
@@ -197,30 +197,3 @@ Distribusi kode ini mengikuti lisensi [MIT License](LICENSE).
 **🗓️ Terakhir Diperbarui**: July 22, 2025
 **📁 Database Version**: Generated July 1, 2025 @ 08:05 AM
 
----
-
-## 📌 Catatan
-
-> Jika Anda tertarik untuk berkontribusi, silakan buat pull request atau hubungi saya melalui email.
-> Untuk laporan bug dan permintaan fitur, gunakan tab [Issues](https://github.com/username/mmid-production-system/issues).
-
----
-
-### 📌 TODO (Opsional Tambahan)
-
-* [ ] Menambahkan fitur notifikasi real-time
-* [ ] Integrasi RESTful API
-* [ ] Export laporan ke PDF
-* [ ] Modul inventory bahan baku
-
----
-
-### ✅ Tips Tambahan
-
-* Simpan gambar tangkapan layar ke `docs/screenshots/`
-* Gunakan resolusi tinggi agar tampilan menarik di GitHub
-* Buat `LICENSE`, `.gitignore`, dan `CONTRIBUTING.md` untuk kesan profesional
-
----
-
-Kalau kamu ingin, aku bisa bantu generate badge, dokumentasi REST API (jika tersedia), atau file `.env.example`. Cukup bilang saja ya.
