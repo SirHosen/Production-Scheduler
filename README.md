@@ -244,15 +244,6 @@ $task = [
 - Token akses untuk API (personal_access_tokens)
 - Audit trail untuk aktivitas pengguna
 
-## 🤝 Kontribusi
-
-Untuk berkontribusi pada proyek ini:
-
-1. Fork repository
-2. Buat branch fitur (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
 
 ## 📄 Lisensi
 
