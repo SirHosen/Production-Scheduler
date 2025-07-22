@@ -1,26 +1,33 @@
-# Sistem Manajemen Produksi MMID
+<img width="1920" height="1080" alt="Halaman Login" src="https://github.com/user-attachments/assets/37301493-3498-4639-8120-c9680d2f94cf" /><img width="1920" height="1080" alt="Halaman Login" src="https://github.com/user-attachments/assets/b84e693d-5d40-4910-ae13-97a349dc59a9" /># 📦 Sistem Manajemen Produksi MMID
 
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![PHP](https://img.shields.io/badge/PHP-8.2.28-777BB4?logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.0.42-4479A1?logo=mysql&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-Framework-FF2D20?logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2.28-777BB4?logo=php\&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0.42-4479A1?logo=mysql\&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-Framework-FF2D20?logo=laravel\&logoColor=white)
+
+> Sistem Manajemen Produksi berbasis web untuk industri manufaktur modern.
+> Dibangun menggunakan Laravel & MySQL, sistem ini mendukung manajemen jadwal produksi, kontrol kualitas, pelaporan, serta kolaborasi antar-departemen.
+
+---
 
 ## 📋 Deskripsi Proyek
 
-Sistem Manajemen Produksi MMID adalah aplikasi web yang dirancang untuk mengelola proses produksi di lingkungan manufaktur. Sistem ini memungkinkan manajemen jadwal produksi, penugasan kerja, pemantauan kualitas, dan pelaporan yang terintegrasi untuk meningkatkan efisiensi operasional pabrik.
+Sistem ini dirancang untuk meningkatkan efisiensi dan koordinasi dalam proses produksi melalui otomasi tugas, penjadwalan, pelaporan, serta kontrol kualitas yang terintegrasi.
 
-### 🎯 Tujuan Utama
-- Mengotomatisasi proses penjadwalan produksi
-- Meningkatkan koordinasi antar departemen
-- Memfasilitasi pelaporan real-time
-- Mengoptimalkan alur kerja produksi
-- Menyediakan sistem kontrol kualitas yang terintegrasi
+### 🎯 Tujuan
+
+* 📅 Otomatisasi penjadwalan produksi
+* 🤝 Kolaborasi lintas departemen
+* 📈 Pelaporan real-time
+* ⚙️ Optimasi alur produksi
+* 🧪 Kontrol kualitas terpusat
+
+---
 
 ## 🏗️ Arsitektur Sistem
 
-### Database Schema
-Sistem menggunakan database MySQL dengan struktur tabel utama:
+### Skema Database (Simplifikasi)
 
 ```
 users ←→ roles
@@ -32,48 +39,102 @@ production_schedules ←→ tasks
 reports
 ```
 
-### Entitas Utama
-- **Users**: Manajemen pengguna sistem
-- **Roles**: Sistem peran (Administrator, Manajer Produksi, Pekerja Pabrik)
-- **Departments**: Departemen (Produksi, Quality Control, Maintenance, Logistik, Teknik)
-- **Production Schedules**: Jadwal produksi dengan target dan status
-- **Tasks**: Tugas-tugas yang ditetapkan kepada pekerja
-- **Reports**: Laporan harian, insiden, kualitas, dan pemeliharaan
+### Entitas Kunci
+
+* **Users**: Otentikasi & peran
+* **Departments**: Unit produksi
+* **Production Schedules**: Jadwal produksi
+* **Tasks**: Tugas-tugas kerja
+* **Reports**: Laporan harian, insiden, kualitas, pemeliharaan
+
+---
 
 ## 🚀 Fitur Utama
 
 ### 👨‍💼 Administrator
-- ✅ Manajemen pengguna dan peran
-- ✅ Konfigurasi departemen
-- ✅ Akses penuh ke semua fitur sistem
-- ✅ Manajemen konfigurasi sistem
+
+* Kelola pengguna & peran
+* Konfigurasi sistem & departemen
 
 ### 👨‍🏭 Manajer Produksi
-- ✅ Pembuatan dan pengeditan jadwal produksi
-- ✅ Penugasan tugas kepada pekerja
-- ✅ Pemantauan kemajuan produksi
-- ✅ Pembuatan laporan produksi dan kualitas
-- ✅ Penetapan target kuantitas
+
+* Kelola jadwal produksi
+* Tetapkan tugas & pantau kemajuan
+* Buat laporan produksi & kualitas
 
 ### 👷‍♂️ Pekerja Pabrik
-- ✅ Melihat jadwal produksi yang relevan
-- ✅ Mengelola tugas yang ditetapkan
-- ✅ Pembaruan status tugas real-time
-- ✅ Pembuatan laporan harian dan insiden
-- ✅ Pelaporan masalah kualitas
 
-## 🛠️ Teknologi yang Digunakan
+* Lihat jadwal & tugas
+* Perbarui status tugas
+* Buat laporan harian & insiden
 
-- **Backend**: PHP 8.2.28
-- **Framework**: Laravel (berdasarkan struktur migrasi)
-- **Database**: MySQL 8.0.42
-- **Server**: Ubuntu 22.04.1
-- **Tools**: phpMyAdmin 5.1.1
+---
+
+## 🖼️ 📷 Screenshots
+
+| Halaman                | Tangkapan Layar                                                                                                                         |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **🔐 Login**           | <img src="https://github.com/user-attachments/assets/712f8ef6-7bee-408c-be21-ed858bfce416" alt="Halaman Login" width="100%" />          |
+| **📊 Dashboard**       | <img src="https://github.com/user-attachments/assets/c721f563-0c6f-4bef-b47a-b11380ead40c" alt="Dashboard Awal" width="100%" />         |
+| **📅 Jadwal Produksi** | <img src="https://github.com/user-attachments/assets/9b05eccc-91ff-4ae8-8483-29f178de611a" alt="Tab Jadwal Produksi" width="100%" />    |
+| **📋 Tugas**           | <img src="https://github.com/user-attachments/assets/68ef9174-352c-4fae-8674-ae8d2f7b53fa" alt="Tab Manajemen Tugas" width="100%" />    |
+| **👥 Pengguna**        | <img src="https://github.com/user-attachments/assets/12948021-4603-41f5-ac6d-7b806a4dc0e1" alt="Tab Manajemen Pengguna" width="100%" /> |
+| **📝 Laporan**         | <img src="https://github.com/user-attachments/assets/55550ca4-7925-4db4-a2e6-d70d654c85d5" alt="Tab Laporan" width="100%" />            |
+
+---
+
+## 🛠️ Teknologi Digunakan
+
+| Komponen | Teknologi                 |
+| -------- | ------------------------- |
+| Backend  | PHP 8.2.28, Laravel       |
+| Database | MySQL 8.0.42              |
+| Server   | Ubuntu 22.04.1            |
+| Tool Dev | Composer, npm, phpMyAdmin |
+
+---
+
+## 🔧 Instalasi
+
+### Prasyarat
+
+* PHP >= 8.2
+* MySQL >= 8.0
+* Composer & Node.js
+
+### Langkah-langkah
+
+```bash
+# 1. Clone repository
+git clone https://github.com/username/mmid-production-system.git
+cd mmid-production-system
+
+# 2. Install dependensi
+composer install
+npm install && npm run build
+
+# 3. Copy file konfigurasi dan generate key
+cp .env.example .env
+php artisan key:generate
+
+# 4. Konfigurasi .env Anda
+# (Edit DB_DATABASE, DB_USERNAME, DB_PASSWORD)
+
+# 5. Import database (atau migrate jika pakai fresh DB)
+mysql -u root -p mmid_production < database.sql
+# php artisan migrate
+
+# 6. Jalankan server
+php artisan serve
+```
+
+---
 
 ## 📊 Diagram Sistem
 
-### Use Case Diagram
-```
+### 📌 Use Case Diagram
+
+```plaintext
 Administrator ──→ Kelola Pengguna
               ──→ Kelola Departemen
               ──→ Konfigurasi Sistem
@@ -88,7 +149,8 @@ Pekerja Pabrik ──→ Lihat Jadwal
                ──→ Buat Laporan Harian
 ```
 
-### Entity Relationship Diagram
+### 📌 Entity Relationship Diagram (ERD)
+
 ```sql
 users (1) ──→ (N) production_schedules
 users (1) ──→ (N) tasks
@@ -99,162 +161,66 @@ roles (1) ──→ (N) users
 departments (1) ──→ (N) users
 ```
 
-## 🚦 Status Sistem
-
-### Status Produksi
-- **Pending**: Jadwal yang belum dimulai
-- **Active**: Jadwal yang sedang berjalan
-- **Completed**: Jadwal yang telah selesai
-
-### Status Tugas
-- **Pending**: Tugas yang belum dimulai
-- **In-Progress**: Tugas yang sedang dikerjakan
-- **Completed**: Tugas yang telah selesai
-
-### Jenis Laporan
-- **Daily**: Laporan harian produksi
-- **Incident**: Laporan insiden atau masalah
-- **Quality**: Laporan kontrol kualitas
-- **Maintenance**: Laporan pemeliharaan
-
-## 🔧 Instalasi
-
-### Prasyarat
-- PHP >= 8.2
-- MySQL >= 8.0
-- Composer
-- Laravel Framework
-
-### Langkah Instalasi
-
-1. **Clone Repository**
-```bash
-git clone https://github.com/username/mmid-production-system.git
-cd mmid-production-system
-```
-
-2. **Install Dependencies**
-```bash
-composer install
-npm install
-```
-
-3. **Konfigurasi Environment**
-```bash
-cp .env.example .env
-php artisan key:generate
-```
-
-4. **Konfigurasi Database**
-```env
-DB_CONNECTION=mysql
-DB_HOST=localhost
-DB_PORT=3306
-DB_DATABASE=mmid_production
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-```
-
-5. **Import Database**
-```bash
-mysql -u username -p mmid_production < database.sql
-```
-
-6. **Jalankan Migrasi (Opsional)**
-```bash
-php artisan migrate
-```
-
-7. **Jalankan Server**
-```bash
-php artisan serve
-```
-
-## 📝 Penggunaan Sistem
-
-### Untuk Manajer Produksi
-
-1. **Membuat Jadwal Produksi**
-```php
-// Contoh data jadwal produksi
-$schedule = [
-    'title' => 'Produksi Bumper Depan Avanza',
-    'description' => 'Produksi bumper depan untuk Toyota Avanza',
-    'start_time' => '2025-07-23 08:00:00',
-    'end_time' => '2025-07-25 17:00:00',
-    'production_line' => 'Line A',
-    'target_quantity' => 500,
-    'status' => 'pending'
-];
-```
-
-2. **Menugaskan Pekerja**
-```php
-// Contoh penugasan
-$task = [
-    'title' => 'Persiapan Material',
-    'description' => 'Menyiapkan material untuk produksi',
-    'production_schedule_id' => 1,
-    'assigned_to' => 5, // ID pekerja
-    'due_date' => '2025-07-23 10:00:00',
-    'priority' => 3
-];
-```
-
-### Untuk Pekerja Pabrik
-
-1. **Memperbarui Status Tugas**
-   - Login ke sistem
-   - Pilih tugas yang ditetapkan
-   - Ubah status: Pending → In-Progress → Completed
-
-2. **Membuat Laporan Harian**
-   - Akses menu "Buat Laporan"
-   - Pilih jenis "Daily"
-   - Isi detail produksi dan catatan
-
-## 📊 Laporan dan Analitik
-
-### Jenis Laporan yang Tersedia
-
-1. **Laporan Harian Produksi**
-   - Target vs pencapaian harian
-   - Efisiensi per lini produksi
-   - Kendala dan solusi
-
-2. **Laporan Kualitas**
-   - Tingkat defect per batch
-   - Analisis penyebab cacat
-   - Tindakan perbaikan
-
-3. **Laporan Insiden**
-   - Dokumentasi masalah produksi
-   - Analisis penyebab
-   - Tindakan preventif
-
-4. **Laporan Pemeliharaan**
-   - Jadwal maintenance rutin
-   - Perbaikan darurat
-   - Status peralatan
+---
 
 ## 🔐 Keamanan
 
-- Sistem autentikasi berbasis role
-- Password terenkripsi menggunakan bcrypt
-- Token akses untuk API (personal_access_tokens)
-- Audit trail untuk aktivitas pengguna
-
-
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE untuk detail.
-
-## 📞 Kontak
-
-- **Project Dev**: [Hosea Oktarivanes]
-- **Email**: hoseaoktarivanes@gmail.com
+* 🔑 Role-based Authentication
+* 🔒 Password terenkripsi (bcrypt)
+* 🔐 API Token Support
+* 🕵️ Audit Trail aktivitas pengguna
 
 ---
 
-**Last Updated**: July 22, 2025  
-**Database Version**: Generated July 1, 2025 at 08:05 AM  
+## 📈 Pelaporan & Analitik
+
+* **Daily Report**: Perbandingan target & realisasi
+* **Quality Report**: Analisis cacat produksi
+* **Incident Report**: Dokumentasi masalah
+* **Maintenance Report**: Status dan jadwal alat
+
+---
+
+## 📄 Lisensi
+
+Distribusi kode ini mengikuti lisensi [MIT License](LICENSE).
+
+---
+
+## 📞 Kontak Pengembang
+
+* **Nama**: Hosea Oktarivanes
+* **Email**: [hoseaoktarivanes@gmail.com](mailto:hoseaoktarivanes@gmail.com)
+
+---
+
+**🗓️ Terakhir Diperbarui**: July 22, 2025
+**📁 Database Version**: Generated July 1, 2025 @ 08:05 AM
+
+---
+
+## 📌 Catatan
+
+> Jika Anda tertarik untuk berkontribusi, silakan buat pull request atau hubungi saya melalui email.
+> Untuk laporan bug dan permintaan fitur, gunakan tab [Issues](https://github.com/username/mmid-production-system/issues).
+
+---
+
+### 📌 TODO (Opsional Tambahan)
+
+* [ ] Menambahkan fitur notifikasi real-time
+* [ ] Integrasi RESTful API
+* [ ] Export laporan ke PDF
+* [ ] Modul inventory bahan baku
+
+---
+
+### ✅ Tips Tambahan
+
+* Simpan gambar tangkapan layar ke `docs/screenshots/`
+* Gunakan resolusi tinggi agar tampilan menarik di GitHub
+* Buat `LICENSE`, `.gitignore`, dan `CONTRIBUTING.md` untuk kesan profesional
+
+---
+
+Kalau kamu ingin, aku bisa bantu generate badge, dokumentasi REST API (jika tersedia), atau file `.env.example`. Cukup bilang saja ya.
