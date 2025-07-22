@@ -117,22 +117,6 @@ departments (1) ──→ (N) users
 - **Quality**: Laporan kontrol kualitas
 - **Maintenance**: Laporan pemeliharaan
 
-## 📈 Data Produksi (Contoh)
-
-### Lini Produksi Aktif
-- **Line A**: Produksi Bumper Depan Avanza (Selesai)
-- **Line B**: Produksi Bumper Belakang Avanza (Aktif - 70% selesai)
-- **Line C**: Produksi Dashboard Xenia (Pending)
-- **Line D**: Produksi Spion Yaris (Aktif - 40% selesai)
-- **Line E**: Produksi Kaca Depan Rush (Pending)
-
-### Departemen
-1. **Produksi (PROD)**: Bertanggung jawab atas proses produksi
-2. **Quality Control (QC)**: Bertanggung jawab atas kualitas produk
-3. **Maintenance (MAINT)**: Bertanggung jawab atas pemeliharaan mesin
-4. **Logistik (LOG)**: Bertanggung jawab atas pengadaan dan distribusi
-5. **Teknik (ENG)**: Bertanggung jawab atas desain dan pengembangan
-
 ## 🔧 Instalasi
 
 ### Prasyarat
@@ -185,21 +169,6 @@ php artisan migrate
 ```bash
 php artisan serve
 ```
-
-## 👥 Akun Default
-
-### Administrator
-- **Email**: admin@mmid.com
-- **Password**: [Lihat dokumentasi internal]
-- **Employee ID**: ADM001
-
-### Manajer Produksi
-- **Email**: budi.manager@mmid.com
-- **Employee ID**: MGR001
-
-### Pekerja Pabrik
-- **Email**: agus.worker@mmid.com
-- **Employee ID**: WRK001
 
 ## 📝 Penggunaan Sistem
 
@@ -285,44 +254,16 @@ Untuk berkontribusi pada proyek ini:
 4. Push ke branch (`git push origin feature/AmazingFeature`)
 5. Buat Pull Request
 
-## 📋 Roadmap
-
-- [ ] Dashboard analytics real-time
-- [ ] Notifikasi push untuk update status
-- [ ] Mobile app untuk pekerja pabrik
-- [ ] Integration dengan sistem ERP
-- [ ] Machine learning untuk prediksi maintenance
-- [ ] API untuk integrasi sistem eksternal
-
-## 🐛 Pelaporan Bug
-
-Jika menemukan bug atau masalah, silakan buat issue di GitHub dengan informasi:
-- Deskripsi masalah
-- Langkah reproduksi
-- Expected vs actual behavior
-- Screenshot (jika memungkinkan)
-- Environment details
-
 ## 📄 Lisensi
 
 Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE untuk detail.
 
 ## 📞 Kontak
 
-- **Project Maintainer**: [Nama Maintainer]
-- **Email**: admin@mmid.com
-- **Company**: MMID Production
-- **Website**: [https://mmid-production.com](https://mmid-production.com)
-
-## 🙏 Acknowledgments
-
-- Tim Development MMID
-- Departemen Produksi untuk requirements
-- Quality Control team untuk testing
-- Maintenance team untuk feedback sistem
+- **Project Dev**: [Hosea Oktarivanes]
+- **Email**: hoseaoktarivanes@gmail.com
 
 ---
 
 **Last Updated**: July 22, 2025  
 **Database Version**: Generated July 1, 2025 at 08:05 AM  
-**System Status**: ✅ Active Production
