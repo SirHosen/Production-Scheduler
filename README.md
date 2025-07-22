@@ -1,66 +1,328 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistem Manajemen Produksi MMID
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![PHP](https://img.shields.io/badge/PHP-8.2.28-777BB4?logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0.42-4479A1?logo=mysql&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-Framework-FF2D20?logo=laravel&logoColor=white)
 
-## About Laravel
+## 📋 Deskripsi Proyek
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Sistem Manajemen Produksi MMID adalah aplikasi web yang dirancang untuk mengelola proses produksi di lingkungan manufaktur. Sistem ini memungkinkan manajemen jadwal produksi, penugasan kerja, pemantauan kualitas, dan pelaporan yang terintegrasi untuk meningkatkan efisiensi operasional pabrik.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🎯 Tujuan Utama
+- Mengotomatisasi proses penjadwalan produksi
+- Meningkatkan koordinasi antar departemen
+- Memfasilitasi pelaporan real-time
+- Mengoptimalkan alur kerja produksi
+- Menyediakan sistem kontrol kualitas yang terintegrasi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🏗️ Arsitektur Sistem
 
-## Learning Laravel
+### Database Schema
+Sistem menggunakan database MySQL dengan struktur tabel utama:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```
+users ←→ roles
+  ↓
+departments
+  ↓
+production_schedules ←→ tasks
+  ↓
+reports
+```
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Entitas Utama
+- **Users**: Manajemen pengguna sistem
+- **Roles**: Sistem peran (Administrator, Manajer Produksi, Pekerja Pabrik)
+- **Departments**: Departemen (Produksi, Quality Control, Maintenance, Logistik, Teknik)
+- **Production Schedules**: Jadwal produksi dengan target dan status
+- **Tasks**: Tugas-tugas yang ditetapkan kepada pekerja
+- **Reports**: Laporan harian, insiden, kualitas, dan pemeliharaan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Fitur Utama
 
-## Laravel Sponsors
+### 👨‍💼 Administrator
+- ✅ Manajemen pengguna dan peran
+- ✅ Konfigurasi departemen
+- ✅ Akses penuh ke semua fitur sistem
+- ✅ Manajemen konfigurasi sistem
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 👨‍🏭 Manajer Produksi
+- ✅ Pembuatan dan pengeditan jadwal produksi
+- ✅ Penugasan tugas kepada pekerja
+- ✅ Pemantauan kemajuan produksi
+- ✅ Pembuatan laporan produksi dan kualitas
+- ✅ Penetapan target kuantitas
 
-### Premium Partners
+### 👷‍♂️ Pekerja Pabrik
+- ✅ Melihat jadwal produksi yang relevan
+- ✅ Mengelola tugas yang ditetapkan
+- ✅ Pembaruan status tugas real-time
+- ✅ Pembuatan laporan harian dan insiden
+- ✅ Pelaporan masalah kualitas
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 🛠️ Teknologi yang Digunakan
 
-## Contributing
+- **Backend**: PHP 8.2.28
+- **Framework**: Laravel (berdasarkan struktur migrasi)
+- **Database**: MySQL 8.0.42
+- **Server**: Ubuntu 22.04.1
+- **Tools**: phpMyAdmin 5.1.1
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📊 Diagram Sistem
 
-## Code of Conduct
+### Use Case Diagram
+```
+Administrator ──→ Kelola Pengguna
+              ──→ Kelola Departemen
+              ──→ Konfigurasi Sistem
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Manajer Produksi ──→ Buat Jadwal Produksi
+                 ──→ Tetapkan Tugas
+                 ──→ Pantau Kemajuan
+                 ──→ Buat Laporan
 
-## Security Vulnerabilities
+Pekerja Pabrik ──→ Lihat Jadwal
+               ──→ Perbarui Status Tugas
+               ──→ Buat Laporan Harian
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Entity Relationship Diagram
+```sql
+users (1) ──→ (N) production_schedules
+users (1) ──→ (N) tasks
+users (1) ──→ (N) reports
+production_schedules (1) ──→ (N) tasks
+production_schedules (1) ──→ (N) reports
+roles (1) ──→ (N) users
+departments (1) ──→ (N) users
+```
 
-## License
+## 🚦 Status Sistem
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Status Produksi
+- **Pending**: Jadwal yang belum dimulai
+- **Active**: Jadwal yang sedang berjalan
+- **Completed**: Jadwal yang telah selesai
+
+### Status Tugas
+- **Pending**: Tugas yang belum dimulai
+- **In-Progress**: Tugas yang sedang dikerjakan
+- **Completed**: Tugas yang telah selesai
+
+### Jenis Laporan
+- **Daily**: Laporan harian produksi
+- **Incident**: Laporan insiden atau masalah
+- **Quality**: Laporan kontrol kualitas
+- **Maintenance**: Laporan pemeliharaan
+
+## 📈 Data Produksi (Contoh)
+
+### Lini Produksi Aktif
+- **Line A**: Produksi Bumper Depan Avanza (Selesai)
+- **Line B**: Produksi Bumper Belakang Avanza (Aktif - 70% selesai)
+- **Line C**: Produksi Dashboard Xenia (Pending)
+- **Line D**: Produksi Spion Yaris (Aktif - 40% selesai)
+- **Line E**: Produksi Kaca Depan Rush (Pending)
+
+### Departemen
+1. **Produksi (PROD)**: Bertanggung jawab atas proses produksi
+2. **Quality Control (QC)**: Bertanggung jawab atas kualitas produk
+3. **Maintenance (MAINT)**: Bertanggung jawab atas pemeliharaan mesin
+4. **Logistik (LOG)**: Bertanggung jawab atas pengadaan dan distribusi
+5. **Teknik (ENG)**: Bertanggung jawab atas desain dan pengembangan
+
+## 🔧 Instalasi
+
+### Prasyarat
+- PHP >= 8.2
+- MySQL >= 8.0
+- Composer
+- Laravel Framework
+
+### Langkah Instalasi
+
+1. **Clone Repository**
+```bash
+git clone https://github.com/username/mmid-production-system.git
+cd mmid-production-system
+```
+
+2. **Install Dependencies**
+```bash
+composer install
+npm install
+```
+
+3. **Konfigurasi Environment**
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. **Konfigurasi Database**
+```env
+DB_CONNECTION=mysql
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=mmid_production
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+
+5. **Import Database**
+```bash
+mysql -u username -p mmid_production < database.sql
+```
+
+6. **Jalankan Migrasi (Opsional)**
+```bash
+php artisan migrate
+```
+
+7. **Jalankan Server**
+```bash
+php artisan serve
+```
+
+## 👥 Akun Default
+
+### Administrator
+- **Email**: admin@mmid.com
+- **Password**: [Lihat dokumentasi internal]
+- **Employee ID**: ADM001
+
+### Manajer Produksi
+- **Email**: budi.manager@mmid.com
+- **Employee ID**: MGR001
+
+### Pekerja Pabrik
+- **Email**: agus.worker@mmid.com
+- **Employee ID**: WRK001
+
+## 📝 Penggunaan Sistem
+
+### Untuk Manajer Produksi
+
+1. **Membuat Jadwal Produksi**
+```php
+// Contoh data jadwal produksi
+$schedule = [
+    'title' => 'Produksi Bumper Depan Avanza',
+    'description' => 'Produksi bumper depan untuk Toyota Avanza',
+    'start_time' => '2025-07-23 08:00:00',
+    'end_time' => '2025-07-25 17:00:00',
+    'production_line' => 'Line A',
+    'target_quantity' => 500,
+    'status' => 'pending'
+];
+```
+
+2. **Menugaskan Pekerja**
+```php
+// Contoh penugasan
+$task = [
+    'title' => 'Persiapan Material',
+    'description' => 'Menyiapkan material untuk produksi',
+    'production_schedule_id' => 1,
+    'assigned_to' => 5, // ID pekerja
+    'due_date' => '2025-07-23 10:00:00',
+    'priority' => 3
+];
+```
+
+### Untuk Pekerja Pabrik
+
+1. **Memperbarui Status Tugas**
+   - Login ke sistem
+   - Pilih tugas yang ditetapkan
+   - Ubah status: Pending → In-Progress → Completed
+
+2. **Membuat Laporan Harian**
+   - Akses menu "Buat Laporan"
+   - Pilih jenis "Daily"
+   - Isi detail produksi dan catatan
+
+## 📊 Laporan dan Analitik
+
+### Jenis Laporan yang Tersedia
+
+1. **Laporan Harian Produksi**
+   - Target vs pencapaian harian
+   - Efisiensi per lini produksi
+   - Kendala dan solusi
+
+2. **Laporan Kualitas**
+   - Tingkat defect per batch
+   - Analisis penyebab cacat
+   - Tindakan perbaikan
+
+3. **Laporan Insiden**
+   - Dokumentasi masalah produksi
+   - Analisis penyebab
+   - Tindakan preventif
+
+4. **Laporan Pemeliharaan**
+   - Jadwal maintenance rutin
+   - Perbaikan darurat
+   - Status peralatan
+
+## 🔐 Keamanan
+
+- Sistem autentikasi berbasis role
+- Password terenkripsi menggunakan bcrypt
+- Token akses untuk API (personal_access_tokens)
+- Audit trail untuk aktivitas pengguna
+
+## 🤝 Kontribusi
+
+Untuk berkontribusi pada proyek ini:
+
+1. Fork repository
+2. Buat branch fitur (`git checkout -b feature/AmazingFeature`)
+3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
+4. Push ke branch (`git push origin feature/AmazingFeature`)
+5. Buat Pull Request
+
+## 📋 Roadmap
+
+- [ ] Dashboard analytics real-time
+- [ ] Notifikasi push untuk update status
+- [ ] Mobile app untuk pekerja pabrik
+- [ ] Integration dengan sistem ERP
+- [ ] Machine learning untuk prediksi maintenance
+- [ ] API untuk integrasi sistem eksternal
+
+## 🐛 Pelaporan Bug
+
+Jika menemukan bug atau masalah, silakan buat issue di GitHub dengan informasi:
+- Deskripsi masalah
+- Langkah reproduksi
+- Expected vs actual behavior
+- Screenshot (jika memungkinkan)
+- Environment details
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE untuk detail.
+
+## 📞 Kontak
+
+- **Project Maintainer**: [Nama Maintainer]
+- **Email**: admin@mmid.com
+- **Company**: MMID Production
+- **Website**: [https://mmid-production.com](https://mmid-production.com)
+
+## 🙏 Acknowledgments
+
+- Tim Development MMID
+- Departemen Produksi untuk requirements
+- Quality Control team untuk testing
+- Maintenance team untuk feedback sistem
+
+---
+
+**Last Updated**: July 22, 2025  
+**Database Version**: Generated July 1, 2025 at 08:05 AM  
+**System Status**: ✅ Active Production
