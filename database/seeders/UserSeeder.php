@@ -11,7 +11,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         // Admin sudah dibuat di AdminSeeder
-        
+
         // Production Managers
         User::create([
             'name' => 'Budi Santoso',
@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
             'department' => 'Produksi',
             'employee_id' => 'MGR001',
         ]);
-        
+
         User::create([
             'name' => 'Dewi Lestari',
             'email' => 'dewi.manager@mmid.com',

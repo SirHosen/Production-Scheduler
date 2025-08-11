@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'PT MMID Production Scheduler') }}</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -23,14 +23,14 @@
         <aside class="sidebar">
             <div class="sidebar-header">
                 <div class="logo-container">
-                    <img src="{{ asset('images/logo.png') }}" alt="PT MMID Logo" class="logo">
-                    <span class="logo-text">PT MMID</span>
+                    <!--<img src="{{ asset('images/logo.png') }}" alt="PT XYZ" class="logo">-->
+                    <span class="logo-text">PT XYZ</span>
                 </div>
                 <button class="sidebar-toggle d-md-none" id="sidebarToggle">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-            
+
             <div class="sidebar-menu">
                 <div class="menu-header">MAIN MENU</div>
                 <ul class="menu-items">
@@ -71,12 +71,12 @@
                     @endauth
                 </ul>
             </div>
-            
+
             <div class="sidebar-footer">
                 <div class="app-version">Production Scheduler v1.0</div>
             </div>
         </aside>
-        
+
         <!-- Main Content -->
         <main class="main-content">
             <!-- Top Navbar -->
@@ -87,10 +87,10 @@
                     </button>
                     <h1 class="page-title">@yield('page-title', 'Dashboard')</h1>
                 </div>
-                
+
                 <div class="navbar-right">
                     @auth
-                        
+
                         <div class="dropdown user-dropdown">
                             <button class="user-dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="user-avatar">
@@ -117,7 +117,7 @@
                     @endauth
                 </div>
             </nav>
-            
+
             <!-- Content Area -->
             <div class="content-area">
                 <!-- Alert Messages -->
@@ -133,7 +133,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    
+
                     @if(session('error'))
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
                             <div class="alert-icon">
@@ -145,7 +145,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    
+
                     @if($errors->any())
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
                             <div class="alert-icon">
@@ -162,15 +162,15 @@
                         </div>
                     @endif
                 </div>
-                
+
                 <!-- Main Content -->
                 @yield('content')
             </div>
-            
+
             <!-- Footer -->
             <footer class="app-footer">
                 <div class="footer-left">
-                    &copy; {{ date('Y') }} PT Megalopolis Manunggal Industrial Development
+                    &copy; {{ date('Y') }} PT XYZ Industrial Development
                 </div>
                 <div class="footer-right">
                     <a href="#" class="footer-link">Privacy Policy</a>
@@ -179,7 +179,7 @@
             </footer>
         </main>
     </div>
-    
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
