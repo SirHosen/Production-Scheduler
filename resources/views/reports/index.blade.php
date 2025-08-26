@@ -54,6 +54,10 @@
                                         <th>Tipe</th>
                                         <th>Jadwal Produksi</th>
                                         <th>Dibuat Oleh</th>
+<<<<<<< HEAD
+=======
+                                        <th>Penanggung Jawab</th>
+>>>>>>> 2db00e5 (update)
                                         <th>Tanggal</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -65,6 +69,10 @@
                                             <td>{{ ucfirst($report->report_type) }}</td>
                                             <td>{{ $report->productionSchedule->title ?? 'N/A' }}</td>
                                             <td>{{ $report->creator->name }}</td>
+<<<<<<< HEAD
+=======
+                                            <td>{{ $report->task && $report->task->assignedUser ? $report->task->assignedUser->name : 'N/A' }}</td>
+>>>>>>> 2db00e5 (update)
                                             <td>{{ $report->created_at->format('d M Y H:i') }}</td>
                                             <td>
                                                 <div class="btn-group" role="group">

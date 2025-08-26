@@ -107,7 +107,11 @@
                                                         <form action="{{ route('production-schedules.destroy', $schedule->id) }}" method="POST" class="d-inline">
                                                             @csrf
                                                             @method('DELETE')
+<<<<<<< HEAD
                                                             <button type="submit" class="btn btn-sm btn-danger" title="Hapus" 
+=======
+                                                            <button type="submit" class="btn btn-sm btn-danger" title="Hapus"
+>>>>>>> 2db00e5 (update)
                                                                 onclick="return confirm('Apakah Anda yakin ingin menghapus jadwal ini?')">
                                                                 <i class="fas fa-trash"></i>
                                                             </button>
@@ -120,7 +124,11 @@
                                 </tbody>
                             </table>
                         </div>
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 2db00e5 (update)
                         <!-- Pagination -->
                         <div class="d-flex justify-content-center mt-4">
                             {{ $schedules->links() }}

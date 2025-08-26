@@ -13,6 +13,10 @@ class Report extends Model
         'title',
         'content',
         'production_schedule_id',
+<<<<<<< HEAD
+=======
+        'task_id',
+>>>>>>> 2db00e5 (update)
         'created_by',
         'report_type'
     ];
@@ -26,4 +30,12 @@ class Report extends Model
     {
         return $this->belongsTo(ProductionSchedule::class);
     }
+<<<<<<< HEAD
+=======
+
+    public function task()
+    {
+        return $this->belongsTo(Task::class);
+    }
+>>>>>>> 2db00e5 (update)
 }

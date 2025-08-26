@@ -32,4 +32,12 @@ class Task extends Model
     {
         return $this->belongsTo(User::class, 'assigned_to');
     }
+<<<<<<< HEAD
+=======
+
+    public function reports()
+    {
+        return $this->hasMany(Report::class);
+    }
+>>>>>>> 2db00e5 (update)
 }

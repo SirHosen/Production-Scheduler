@@ -12,7 +12,11 @@
                     <form action="{{ route('reports.update', $report->id) }}" method="POST">
                         @csrf
                         @method('PUT')
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 2db00e5 (update)
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <div class="mb-3">
@@ -38,7 +42,11 @@
                                 </div>
                             </div>
                         </div>
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 2db00e5 (update)
                         <div class="mb-3">
                             <label for="production_schedule_id" class="form-label">Jadwal Produksi (Opsional)</label>
                             <select class="form-select @error('production_schedule_id') is-invalid @enderror" id="production_schedule_id" name="production_schedule_id">
@@ -53,7 +61,29 @@
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
+<<<<<<< HEAD
                         
+=======
+
+                        <div class="mb-3">
+                            <label for="task_id" class="form-label">Tugas Terkait (Opsional)</label>
+                            <select class="form-select @error('task_id') is-invalid @enderror" id="task_id" name="task_id">
+                                <option value="">Pilih Tugas</option>
+                                @foreach($tasks as $task)
+                                    <option value="{{ $task->id }}" {{ old('task_id', $report->task_id) == $task->id ? 'selected' : '' }}>
+                                        {{ $task->title }} (Penanggung jawab: {{ $task->assignedUser ? $task->assignedUser->name : 'Tidak ada' }})
+                                    </option>
+                                @endforeach
+                            </select>
+                            <small class="form-text text-muted">
+                                Pilih tugas untuk menunjukkan penanggung jawab pada laporan ini
+                            </small>
+                            @error('task_id')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+>>>>>>> 2db00e5 (update)
                         <div class="mb-3">
                             <label for="content" class="form-label">Konten Laporan</label>
                             <textarea class="form-control @error('content') is-invalid @enderror" id="content" name="content" rows="10" required>{{ old('content', $report->content) }}</textarea>
@@ -61,7 +91,11 @@
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
+<<<<<<< HEAD
                         
+=======
+
+>>>>>>> 2db00e5 (update)
                         <div class="d-flex justify-content-between">
                             <a href="{{ route('reports.show', $report->id) }}" class="btn btn-secondary">Batal</a>
                             <button type="submit" class="btn btn-primary">Simpan Perubahan</button>

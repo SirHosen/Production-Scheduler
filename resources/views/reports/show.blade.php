@@ -37,15 +37,33 @@
                         </div>
                         @if($report->productionSchedule)
                             <div class="mb-3">
+<<<<<<< HEAD
                                 <strong>Jadwal Produksi:</strong> 
+=======
+                                <strong>Jadwal Produksi:</strong>
+>>>>>>> 2db00e5 (update)
                                 <a href="{{ route('production-schedules.show', $report->productionSchedule->id) }}">
                                     {{ $report->productionSchedule->title }}
                                 </a>
                             </div>
                         @endif
+<<<<<<< HEAD
                     </div>
 
                     <div class="card">
+=======
+                        @if($report->task)
+                            <div class="mb-3">
+                                <strong>Tugas Terkait:</strong>
+                                <a href="{{ route('tasks.show', $report->task->id) }}">
+                                    {{ $report->task->title }}
+                                </a>
+                            </div>
+                        @endif
+                    </div>
+
+                    <div class="card mb-4">
+>>>>>>> 2db00e5 (update)
                         <div class="card-header">
                             <h6 class="mb-0">Konten Laporan</h6>
                         </div>
@@ -53,6 +71,33 @@
                             {!! nl2br(e($report->content)) !!}
                         </div>
                     </div>
+<<<<<<< HEAD
+=======
+
+                    @if($report->task && $report->task->assignedUser)
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 class="mb-0">Penanggung Jawab</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8 mx-auto text-center">
+                                    <div class="border-bottom pb-3 mb-3">
+                                        <p class="mb-1">Laporan ini terkait dengan tugas yang ditanggungjawabi oleh:</p>
+                                        <h5 class="mb-0">{{ $report->task->assignedUser->name }}</h5>
+                                    </div>
+                                    <div class="signature-placeholder mb-2">
+                                        <i class="fas fa-signature fa-2x text-muted"></i>
+                                    </div>
+                                    <p class="text-muted small">
+                                        Penanggung jawab tugas: {{ $report->task->title }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+>>>>>>> 2db00e5 (update)
                 </div>
             </div>
         </div>
