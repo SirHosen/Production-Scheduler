@@ -13,7 +13,7 @@
                         @csrf
                         @method('PUT')
 <<<<<<< HEAD
-                        
+
 =======
 
 >>>>>>> 2db00e5 (update)
@@ -43,7 +43,7 @@
                             </div>
                         </div>
 <<<<<<< HEAD
-                        
+
 =======
 
 >>>>>>> 2db00e5 (update)
@@ -61,9 +61,6 @@
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
-<<<<<<< HEAD
-                        
-=======
 
                         <div class="mb-3">
                             <label for="task_id" class="form-label">Tugas Terkait (Opsional)</label>
@@ -82,8 +79,6 @@
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
-
->>>>>>> 2db00e5 (update)
                         <div class="mb-3">
                             <label for="content" class="form-label">Konten Laporan</label>
                             <textarea class="form-control @error('content') is-invalid @enderror" id="content" name="content" rows="10" required>{{ old('content', $report->content) }}</textarea>
@@ -92,7 +87,7 @@
                             @enderror
                         </div>
 <<<<<<< HEAD
-                        
+
 =======
 
 >>>>>>> 2db00e5 (update)

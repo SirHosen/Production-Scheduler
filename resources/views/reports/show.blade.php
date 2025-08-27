@@ -37,21 +37,12 @@
                         </div>
                         @if($report->productionSchedule)
                             <div class="mb-3">
-<<<<<<< HEAD
-                                <strong>Jadwal Produksi:</strong> 
-=======
                                 <strong>Jadwal Produksi:</strong>
->>>>>>> 2db00e5 (update)
                                 <a href="{{ route('production-schedules.show', $report->productionSchedule->id) }}">
                                     {{ $report->productionSchedule->title }}
                                 </a>
                             </div>
                         @endif
-<<<<<<< HEAD
-                    </div>
-
-                    <div class="card">
-=======
                         @if($report->task)
                             <div class="mb-3">
                                 <strong>Tugas Terkait:</strong>
@@ -63,7 +54,6 @@
                     </div>
 
                     <div class="card mb-4">
->>>>>>> 2db00e5 (update)
                         <div class="card-header">
                             <h6 class="mb-0">Konten Laporan</h6>
                         </div>
@@ -71,8 +61,6 @@
                             {!! nl2br(e($report->content)) !!}
                         </div>
                     </div>
-<<<<<<< HEAD
-=======
 
                     @if($report->task && $report->task->assignedUser)
                     <div class="card">
@@ -97,7 +85,6 @@
                         </div>
                     </div>
                     @endif
->>>>>>> 2db00e5 (update)
                 </div>
             </div>
         </div>

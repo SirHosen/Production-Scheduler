@@ -82,27 +82,17 @@ body {
     .card-body {
         padding: 1rem;
     }
-<<<<<<< HEAD
-    
-    .table th, .table td {
-        padding: 0.5rem;
-    }
-    
-=======
 
     .table th, .table td {
         padding: 0.5rem;
     }
 
->>>>>>> 2db00e5 (update)
     .btn-sm {
         padding: 0.25rem 0.5rem;
         font-size: 0.75rem;
     }
 }
 
-<<<<<<< HEAD
-=======
 /* Signature Styles */
 .signature-placeholder {
     min-height: 80px;
@@ -114,34 +104,21 @@ body {
     justify-content: center;
 }
 
->>>>>>> 2db00e5 (update)
 /* Print Styles */
 @media print {
     .no-print {
         display: none;
     }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 2db00e5 (update)
     .card {
         box-shadow: none;
         border: 1px solid #ddd;
     }
-<<<<<<< HEAD
-    
-    body {
-        font-size: 12pt;
-    }
-    
-=======
 
     body {
         font-size: 12pt;
     }
 
->>>>>>> 2db00e5 (update)
     .container {
         width: 100%;
         max-width: 100%;
